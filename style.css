@@ -10,6 +10,7 @@
 body {
     background-color: blueviolet;
     font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(90deg, #e0c3fc, #8ec7fc)
 }
 
 .container {
@@ -24,5 +25,51 @@ h1 {
     padding: 25px 0;
 }
 
+.dflex {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    width: 100%;
+}
 
+.dflex-column {
+    display: flex;
+    flex-direction: column;
+}
 
+.excluir-botao {
+    position: absolute;
+    right: 10px;
+}
+
+.entrada {
+    padding: 40px;
+    text-align: center;
+    border: none;
+}
+
+input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.add {
+    padding: 12px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ba7af8;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+p {
+    font-weight: bold;
+}
+
+.check {
+    color: rgb(202, 202, 202);
+    text-decoration: line-through;
+}
+
+.botoes {
+    display: none;
+}

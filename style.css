@@ -10,12 +10,29 @@
 body {
     background-color: blueviolet;
     font-family: 'Open Sans', sans-serif;
-    background-image: linear-gradient(90deg, #e0c3fc, #8ec7fc)
+    background-image: linear-gradient(90deg, #e0c3fc, #8ec7fc);
+    margin: 0 auto;
 }
 
 .container {
     background-color: #ffffff;
-    height: 100vh;
+    margin: 10vh auto;
+    /* height: 100vh; */
+}
+
+@media (min-width: 420px){
+    .container {
+        width: 60vw;
+        /* height: 80vh; */
+    }
+}
+
+@media (min-width: 960px){
+    .container {
+        width: 40vw;
+        margin: 10vh auto;
+        /* height: 80vh; */
+    }
 }
 
 h1 {
@@ -35,11 +52,6 @@ h1 {
 .dflex-column {
     display: flex;
     flex-direction: column;
-}
-
-.excluir-botao {
-    position: absolute;
-    right: 10px;
 }
 
 .entrada {
@@ -63,6 +75,9 @@ input::placeholder {
 
 p {
     font-weight: bold;
+    word-break: break-all;
+    border: 1px solid #ececec;
+    padding: 14px;
 }
 
 .check {
@@ -72,4 +87,40 @@ p {
 
 .botoes {
     display: none;
+}
+
+.listaDeTarefas {
+    display: flex;
+}
+
+.concluir {
+    border-style: none;
+    padding: 4px;
+    font-size: 0.9rem;
+    background-color: inherit;
+    color: #7a6b77;
+    margin: 0;
+}
+
+.apagar {
+    border-style: none;
+    padding: 4px;
+    font-size: 0.9rem;
+    background-color: inherit;
+    color: #7a6b77;
+    margin: 0;
+}
+
+.excluir-botao {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.0rem;
+    float: right;
+}
+
+.div-drag {
+    cursor: grab;
 }
